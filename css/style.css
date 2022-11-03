@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(../media/255128-barbecue-bbq-grill-and-cook-hd.jpg);
+    background-size: cover;
+}
+
+.box {
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.938);
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-image: url(../media/pic/); */
+    text-align: center;
+    transition: .5s;
+
+}
+
+.box:hover {
+    box-shadow: 0 0 7px rgb(255, 255, 255);
+}
+.box img{
+    width: 100px;
+}
+
+.box h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.box .username,
+.box .password {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border-bottom: 2px solid #fe724c;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.4s;
+
+}
+
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+    width: 280px;
+    border-color: #ffffff;
+    box-shadow: 0 0 6px #ffffff;
+
+}
+
+.box .input {
+    border: 0;
+    background: #2ecc71;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border:none;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.box .input:hover {
+    background: #16d867;
+
+
+}
+
+.box .input:active {
+    background-color: rgb(81, 168, 0);
+    box-shadow: 0 0 10px rgb(39, 247, 39);
+    box-shadow: 0 0 6px #2ecc71;
+    
+
+}
