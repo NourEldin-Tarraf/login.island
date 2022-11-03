@@ -5,6 +5,15 @@ body {
     background-image: url(../media/255128-barbecue-bbq-grill-and-cook-hd.jpg);
     background-size: cover;
 }
+@media(max-width:676px){
+    body{
+        background-image: url(../media/tall.jpg);
+        background-size: 500px;
+        height: 100vh;
+    
+    }
+  
+}
 
 .box {
     width: 300px;
@@ -12,16 +21,23 @@ body {
     position: absolute;
     border-radius: 10px;
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.938);
-
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* background-image: url(../media/pic/); */
+    /* background-image: url(../media/255128-barbecue-bbq-grill-and-cook-hd.jpg); */
     text-align: center;
     transition: .5s;
-
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
-
+@media(max-width:676px){
+.box{
+    /* background-image: url(../media/tall.jpg); */
+        width: 200px;
+    }
+}
 .box:hover {
     box-shadow: 0 0 7px rgb(255, 255, 255);
 }
@@ -43,11 +59,11 @@ body {
     display: block;
     margin: 20px auto;
     text-align: center;
-    border-bottom: 2px solid #fe724c;
+    border-bottom: 3px solid #4cfed1;
     padding: 14px 10px;
     width: 200px;
     outline: none;
-    color: white;
+    color: rgb(255, 255, 255);
     border-radius: 24px;
     transition: 0.4s;
 
@@ -61,6 +77,13 @@ body {
     box-shadow: 0 0 6px #ffffff;
 
 }
+@media(max-width:676px){
+    .box input[type="text"]:focus,
+.box input[type="password"]:focus{
+    width: 200px;
+}
+}
+
 
 .box .input {
     border: 0;
